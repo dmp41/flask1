@@ -41,7 +41,7 @@ class CategoryView(ModelView):
 
 admin.add_view(CategoryView(Category, db.session))
 admin.add_view(CategoryView(Article, db.session))
-
+#Главная страница
 @app.route('/')
 def index():
     latest_articles = Article.query.order_by(Article.put_date.desc())[:3]
