@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if number %}
+         {% for n in number%}
+             <div class="n">
+                 {{n}}
+             </div>
+        {% endfor %}
+    {%else%}
+         <h2>Статей нет</h2>
+    {% endif %}
+</body>
+</html>
